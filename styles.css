@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+/* shared Items */
+.color-1 {
+  color: #8987a1;
+}
+.color-2 {
+  color: #252432;
+}
+.color-orange {
+  color: #e95a08;
+}
+
+/* Nav styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 150px 0 150px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+/* banner style */
+.banner {
+  display: flex;
+  align-items: end;
+  margin: 150px;
+}
+.banner-text h1 {
+  font-weight: 700;
+  font-size: 65px;
+}
+.banner-text p {
+  font-weight: 400;
+  font-size: 22px;
+}
+/* PLANT STYLES */
+.plant h1 {
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+  padding: 16px 0;
+}
+.plant p {
+  font-weight: 400;
+  font-size: 22px;
+  color: #8987a1;
+  text-align: center;
+  padding: 16px 0;
+  margin-bottom: 33px;
+}
+.plant {
+  margin: 0 150px;
+}
+.plant-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 30px;
+}
+.plant-item {
+  text-align: center;
+}
+.plant-item h2 {
+  font-weight: 500;
+  font-size: 22px;
+  margin-top: 36px;
+}
+.plant-item h3 {
+  font-weight: 700;
+  font-size: 22px;
+  margin-top: 30px;
+}
+.plant-item button {
+  padding-inline: none;
+  background-color: #e95a08;
+  color: white;
+  padding: 19px 80px;
+  margin-top: 36px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  width: 95%;
+}
