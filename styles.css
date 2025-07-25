@@ -104,3 +104,27 @@ nav ul li a {
   cursor: pointer;
   width: 95%;
 }
+/* plant lover styles */
+.plant-lover {
+  margin: 150px;
+}
+.lover-container {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 60px;
+  align-items: center;
+}
+.lover-text h3 {
+  font-weight: 700;
+  font-size: 50px;
+  padding-top: 10px;
+}
+.lover-text ul li {
+  font-weight: 400;
+  font-size: 22px;
+  color: #8987a1;
+  padding: 20px 0;
+}
+.lover-text ul {
+  margin-left: 25px;
+}
