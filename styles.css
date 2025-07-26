@@ -31,7 +31,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 30px 150px 0 150px;
+  margin: 30px 150px 75px 150px;
 }
 nav ul {
   display: flex;
@@ -47,7 +47,7 @@ nav ul li a {
 .banner {
   display: flex;
   align-items: end;
-  margin: 150px;
+  margin: 75px 150px 75px 150px;
 }
 .banner-text h1 {
   font-weight: 700;
@@ -73,7 +73,7 @@ nav ul li a {
   margin-bottom: 33px;
 }
 .plant {
-  margin: 0 150px;
+  margin: 75px 150px;
 }
 .plant-container {
   display: grid;
@@ -106,7 +106,7 @@ nav ul li a {
 }
 /* plant lover styles */
 .plant-lover {
-  margin: 150px;
+  margin: 75px 150px;
 }
 .lover-container {
   display: flex;
@@ -131,7 +131,7 @@ nav ul li a {
 /* leteast deal */
 .deals-section {
   text-align: center;
-  margin: 0 150px;
+  margin: 75px 150px;
 }
 
 .deals-section h2 {
@@ -211,7 +211,7 @@ nav ul li a {
   text-align: center;
   color: white;
   position: relative;
-  margin: 150px auto;
+  margin: 75px auto;
 }
 
 .content {
@@ -255,7 +255,7 @@ h1 {
 
 /* footer styles */
 footer {
-  margin: 50px 150px 100px 150px;
+  margin: 75px 150px 100px 150px;
 }
 
 .footer-container {
@@ -263,10 +263,6 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
 }
-
-/* .footer-left {
-  max-width: 300px;
-} */
 
 .footer-left .logo {
   margin-bottom: 10px;
@@ -299,4 +295,191 @@ footer {
   display: flex;
   gap: 32px;
   align-items: center;
+}
+
+/* responsive */
+
+@media (max-width: 390px) {
+  nav {
+    align-items: center;
+    margin: 10px;
+    gap: 10px;
+  }
+  nav ul li:not(:last-child) {
+    display: none;
+  }
+
+  nav ul {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .banner {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 30px 10px;
+  }
+
+  /* .banner-img img{
+    max-width: 100%;
+  } */
+  .banner-text h1 {
+    font-size: 32px;
+  }
+
+  .banner-text p {
+    font-size: 16px;
+  }
+
+  .plant {
+    margin: 0 10px;
+  }
+
+  .plant h1 {
+    font-size: 28px;
+    padding: 8px 0;
+  }
+
+  .plant p {
+    font-size: 14px;
+    padding: 8px 0;
+    margin-bottom: 16px;
+  }
+
+  .plant-container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    margin: 5px;
+  }
+
+  .plant-item h2,
+  .plant-item h3 {
+    font-size: 16px;
+    margin-top: 16px;
+  }
+
+  .plant-item button {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 14px;
+    margin-top: 16px;
+  }
+
+  .plant-lover {
+    margin: 30px 10px;
+  }
+
+  .lover-container {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .lover-text h3 {
+    font-size: 28px;
+    padding-top: 5px;
+  }
+
+  .lover-text ul li {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+
+  .lover-text ul {
+    margin-left: 10px;
+  }
+
+  .deals-section {
+    margin: 0 10px;
+  }
+
+  .deals-section h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+
+  .deals-section p {
+    font-size: 12px;
+    max-width: 100%;
+  }
+
+  .deals-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 5px;
+  }
+
+  .deal-content h3 {
+    font-size: 20px;
+  }
+
+  .subscribe-section {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    padding: 30px 10px;
+    margin: 30px 0;
+  }
+
+  .content {
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .subscribe-form input,
+  .subscribe-form button {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  footer {
+    margin: 20px 10px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer-left .logo {
+    margin-bottom: 5px;
+  }
+
+  .footer-left p {
+    font-size: 12px;
+  }
+
+  .footer-center {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-links {
+    gap: 10px;
+  }
+
+  .footer-links a {
+    font-size: 12px;
+  }
+
+  .footer-right {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 }
